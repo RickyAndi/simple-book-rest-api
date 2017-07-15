@@ -1,0 +1,19 @@
+{
+  "port": {
+    "production": 3000,
+    "development": 3010,
+    "test": 3020
+  },
+  "server_url": "http://localhost",
+  "db": {
+    "username": "",
+    "password": "",
+    "host": "localhost",
+    "port": 27017,
+    "name": {
+      "production": "api-production",
+      "development": "api-development",
+      "test": "api-test"
+    }
+  }
+}

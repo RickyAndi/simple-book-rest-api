@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha 'test/**/*.test.js'",
+    "dev": "NODE_ENV=development nodemon run",
+    "prod": "NODE_ENV=production node run"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "asyncawait": "^1.0.6",
+    "body-parser": "^1.17.2",
+    "chai": "^4.1.0",
+    "chai-shallow-deep-equal": "^1.4.6",
+    "express": "^4.15.3",
+    "mocha": "^3.4.2",
+    "mongoose": "^4.11.3",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "throw.js": "^3.0.1"
+  }
+}
