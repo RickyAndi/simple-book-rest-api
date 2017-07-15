@@ -1,6 +1,7 @@
 const Book = require('../models/Book');
 const {async, await} = require('asyncawait');
 const ObjectId = require('mongoose').Types.ObjectId;
+const getError = require('../utils/getError');
 
 const bookService =  {
   create: async((bookData) => {
@@ -27,7 +28,10 @@ const bookService =  {
   }),
   throwErrorIfIdIsNotValid(id) {
     if (!ObjectId.isValid(id)) {
-      throw new Error('you must provide valid id');
+      throw getError({ 
+        status: 400, 
+        message: 'The book id you provided in url param is not valid'
+      });
     }
   }
 }
