@@ -16,6 +16,7 @@
     "chai": "^4.1.0",
     "chai-shallow-deep-equal": "^1.4.6",
     "express": "^4.15.3",
+    "express-validator": "^3.2.1",
     "mocha": "^3.4.2",
     "mongoose": "^4.11.3",
     "request": "^2.81.0",
