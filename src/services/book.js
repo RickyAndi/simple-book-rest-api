@@ -1,4 +1,4 @@
-const Book = require('../models/Book');
+const {Book} = require('../models/Book');
 const {async, await} = require('asyncawait');
 const ObjectId = require('mongoose').Types.ObjectId;
 const getError = require('../utils/getError');
