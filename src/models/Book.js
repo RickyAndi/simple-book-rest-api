@@ -15,4 +15,26 @@ const schema = new mongoose.Schema({
   }
 });
 
-module.exports = mongoose.model('Book', schema);
+module.exports = {
+  Book: mongoose.model('Book', schema),
+  validation: {
+    title: [
+      {
+        errorMessage: 'Title can be empty',
+        method: 'notEmpty'
+      }
+    ],
+    description: [
+      {
+        errorMessage: 'Description can be empty',
+        method: 'notEmpty'
+      }
+    ],
+    author: [
+      {
+        errorMessage: 'Author can be empty',
+        method: 'notEmpty'
+      }
+    ]
+  }
+};
